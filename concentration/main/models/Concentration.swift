@@ -11,11 +11,7 @@ class Concentration {
         return cards.count
     }
     
-    var cards: [Card] {
-        return Array(cardMapping.values)
-    }
-    
-    private var cardMapping = [Int:Card]()
+    private(set) var cards = [Card]()
     private var emojis: [String]
     
     init(emojis: [String]) {
@@ -27,21 +23,20 @@ class Concentration {
     private func initializeCards(_ emojis: [String]) {
         for emoji in emojis {
             let card = Card(emoji: emoji)
-            let secondCard = Card(emoji: emoji)
             
-            cardMapping[card.identifier] = card
-            cardMapping[secondCard.identifier] = secondCard
+            cards.insert(contentsOf: [card, card], at: 0)
         }
     }
     
-    func flipCard(identifier: Int) {
-        var card = cardMapping[identifier]
+    func flipCard(index: Int) {
+        var card = cards[index];
         
-        if (card?.isFlipped == true) {
-            card?.isFlipped = false
-        } else {
-            card?.isFlipped = false
+        if card.isFlipped {
+            cards[index].isFlipped = false
+            return
         }
+
+        cards[index].isFlipped = true
     }
     
 }
