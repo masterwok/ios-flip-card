@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     @IBOutlet var cardButtons: [UIButton]!
 
+    @IBOutlet weak var labelFlipCount: UILabel!
+    
     @IBAction func OnCardTouchUpInside(_ sender: UIButton) {
         concentration.flipCard(index: cardButtons.firstIndex(of: sender)!)
 
@@ -28,6 +30,8 @@ class ViewController: UIViewController {
 
     private func updateViewComponents() {
         var cards = concentration.cards
+        
+        labelFlipCount.text = "Flips: \(concentration.flipCount)"
         
         for (index, card) in cards.enumerated() {
             var cardButton = cardButtons[index]
