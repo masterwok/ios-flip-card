@@ -29,14 +29,14 @@ class ViewController: UIViewController {
     }
 
     private func updateViewComponents() {
-        var cards = concentration.cards
+        let cards = concentration.cards
         
         labelFlipCount.text = "Flips: \(concentration.flipCount)"
         
         for (index, card) in cards.enumerated() {
-            var cardButton = cardButtons[index]
+            let cardButton = cardButtons[index]
 
-            if card.isFlipped {
+            if card.isFlipped || card.isMatched {
                 cardButton.setTitle(card.emoji, for: UIControl.State.normal)
                 cardButton.backgroundColor = .white
                 continue
