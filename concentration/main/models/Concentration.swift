@@ -28,9 +28,9 @@ class Concentration {
             cards.insert(contentsOf: [card, card], at: 0)
         }
     }
-    
+
     private var firstFlippedCardIndex: Int?
-    
+
     private func flipAllCardsDown() {
         for index in cards.indices {
             cards[index].isFlipped = false
@@ -38,18 +38,20 @@ class Concentration {
     }
 
     func flipCard(index: Int) {
-        // Already flipped, do nothing.
-        if firstFlippedCardIndex == index {
+        var card = cards[index]
+
+        // Card already flipped, do nothing
+        if card.isFlipped {
             return
         }
-        
+
         flipCount += 1
 
         flipAllCardsDown()
-        
+
         // Set card to flipped
         cards[index].isFlipped = true
-        
+
         if firstFlippedCardIndex == nil {
             firstFlippedCardIndex = index
             cards[index].isFlipped = true
@@ -57,14 +59,14 @@ class Concentration {
         }
         
         cards[firstFlippedCardIndex!].isFlipped = true
-        
+
         if cards[firstFlippedCardIndex!].emoji == cards[index].emoji {
             cards[firstFlippedCardIndex!].isMatched = true
             cards[index].isMatched = true
             firstFlippedCardIndex = nil
             return
         }
-        
+
         firstFlippedCardIndex = nil
     }
 
