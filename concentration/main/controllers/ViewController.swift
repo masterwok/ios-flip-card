@@ -12,7 +12,12 @@ class ViewController: UIViewController {
 
     @IBOutlet var cardButtons: [UIButton]!
 
-    @IBOutlet weak var labelFlipCount: UILabel!
+    @IBOutlet weak var labelFlipCount: UILabel! {
+        // Interesting way to set inital view states
+        didSet {
+            updateFlipCountLabel()
+        }
+    }
     
     @IBAction func OnCardTouchUpInside(_ sender: UIButton) {
         concentration.flipCard(index: cardButtons.firstIndex(of: sender)!)
@@ -23,6 +28,11 @@ class ViewController: UIViewController {
     private let concentration = Concentration(
             emojis: "👻💀☠️👽👾🤖🎃🦇"
     )
+    
+    private let attributesFlipCount: [NSAttributedString.Key : Any] = [
+        NSAttributedString.Key.strokeWidth: 5.0,
+        NSAttributedString.Key.strokeColor: #colorLiteral(red: 0, green: 1, blue: 0.8801295161, alpha: 1)
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +41,8 @@ class ViewController: UIViewController {
     private func updateViewComponents() {
         let cards = concentration.cards
         
-        labelFlipCount.text = "Flips: \(concentration.flipCount)"
-        
+        updateFlipCountLabel()
+
         for (index, card) in cards.enumerated() {
             let cardButton = cardButtons[index]
             
@@ -51,6 +61,13 @@ class ViewController: UIViewController {
             cardButton.setTitle(nil, for: UIControl.State.normal)
             cardButton.backgroundColor = #colorLiteral(red: 0, green: 1, blue: 0.8801295161, alpha: 1)
         }
+    }
+    
+    private func updateFlipCountLabel() {
+        labelFlipCount.attributedText = NSAttributedString(
+            string: "Flips: \(concentration.flipCount)",
+            attributes: attributesFlipCount
+        )
     }
 
 }
