@@ -35,8 +35,14 @@ class ViewController: UIViewController {
         
         for (index, card) in cards.enumerated() {
             let cardButton = cardButtons[index]
+            
+            if card.isMatched {
+                cardButton.setTitle(nil, for: UIControl.State.normal)
+                cardButton.backgroundColor = #colorLiteral(red: 0, green: 1, blue: 0.8801295161, alpha: 0)
+                continue
+            }
 
-            if card.isFlipped || card.isMatched {
+            if card.isFlipped {
                 cardButton.setTitle("\(card.emoji)", for: UIControl.State.normal)
                 cardButton.backgroundColor = .white
                 continue
