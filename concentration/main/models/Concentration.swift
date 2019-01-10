@@ -13,15 +13,15 @@ class Concentration {
 
     private(set) var flipCount = 0
     private(set) var cards = [Card]()
-    private var emojis: [String]
+    private var emojis: [Character]
 
-    init(emojis: [String]) {
+    init(emojis: String) {
         self.emojis = emojis.shuffled()
 
         initializeCards(self.emojis)
     }
 
-    private func initializeCards(_ emojis: [String]) {
+    private func initializeCards(_ emojis: [Character]) {
         for emoji in emojis {
             let card = Card(emoji: emoji)
 

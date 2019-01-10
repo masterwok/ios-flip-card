@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
 
     private let concentration = Concentration(
-            emojis: ["👻", "💀", "☠️", "👽", "👾", "🤖", "🎃", "🦇"]
+            emojis: "👻💀☠️👽👾🤖🎃🦇"
     )
 
     override func viewDidLoad() {
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
             let cardButton = cardButtons[index]
 
             if card.isFlipped || card.isMatched {
-                cardButton.setTitle(card.emoji, for: UIControl.State.normal)
+                cardButton.setTitle("\(card.emoji)", for: UIControl.State.normal)
                 cardButton.backgroundColor = .white
                 continue
             }

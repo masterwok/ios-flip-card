@@ -9,9 +9,9 @@ struct Card {
 
     var isFlipped: Bool = false
     var isMatched: Bool = false
-    var emoji: String
+    var emoji: Character
 
-    init(emoji: String) {
+    init(emoji: Character) {
         self.emoji = emoji
     }
 }
