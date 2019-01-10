@@ -37,7 +37,7 @@ class Concentration {
         }
     }
 
-    func flipCard(index: Int) {
+     func flipCard(index: Int) {
         let card = cards[index]
 
         // Card already flipped, do nothing
