@@ -16,9 +16,9 @@ class Concentration {
     private var emojis: [String]
 
     init(emojis: [String]) {
-        self.emojis = emojis
+        self.emojis = emojis.shuffled()
 
-        initializeCards(emojis)
+        initializeCards(self.emojis)
     }
 
     private func initializeCards(_ emojis: [String]) {
@@ -38,7 +38,7 @@ class Concentration {
     }
 
     func flipCard(index: Int) {
-        var card = cards[index]
+        let card = cards[index]
 
         // Card already flipped, do nothing
         if card.isFlipped {

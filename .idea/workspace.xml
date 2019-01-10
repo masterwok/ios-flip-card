@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91232ca0-1efd-4bb1-bcb7-93326fa03519" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concentration/main/controllers/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/concentration/main/controllers/ViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concentration/main/models/Concentration.swift" beforeDir="false" afterPath="$PROJECT_DIR$/concentration/main/models/Concentration.swift" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +27,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/concentration/main/controllers/ViewController.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="595">
-                  <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+                <state relative-caret-position="544">
+                  <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
                 </state>
               </provider>
             </entry>
@@ -42,13 +40,13 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/concentration/main/models/Concentration.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="582">
-                  <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
+                <state relative-caret-position="612">
+                  <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
                   <folding>
                     <element signature="e#189#223#0" expanded="true" />
                     <element signature="e#390#490#0" expanded="true" />
                     <element signature="e#496#803#0" expanded="true" />
-                    <element signature="e#686#734#0" expanded="true" />
+                    <element signature="e#821#1068#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -79,11 +77,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-2560" />
-    <option name="y" value="-390" />
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -171,31 +168,30 @@
       <option name="presentableId" value="Default" />
       <updated>1547049236040</updated>
       <workItem from="1547049239520" duration="2865000" />
-      <workItem from="1547052422287" duration="9559000" />
+      <workItem from="1547052422287" duration="10078000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12424000" />
+    <option name="totallyTimeSpent" value="12943000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2560" y="-390" width="2560" height="1440" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15091342" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23199023" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32943755" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.22132944" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.22132944" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.10591673" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.15167364" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32943755" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -238,23 +234,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/concentration/main/controllers/ViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/concentration/main/models/Concentration.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
+        <state relative-caret-position="612">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
           <folding>
             <element signature="e#189#223#0" expanded="true" />
             <element signature="e#390#490#0" expanded="true" />
             <element signature="e#496#803#0" expanded="true" />
-            <element signature="e#686#734#0" expanded="true" />
+            <element signature="e#821#1068#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/concentration/main/controllers/ViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
         </state>
       </provider>
     </entry>
